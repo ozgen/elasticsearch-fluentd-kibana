@@ -1,9 +1,12 @@
 # elasticsearch-fluentd-kibana
 ### EFK Stack on Kubernetes
-This repository is an example of how to configure elasticsearch, kibana and fluentd for logging in kubernetes. This repository is inspired from that [blog].  
+This repository is an example of how to configure elasticsearch, kibana and fluentd for logging in kubernetes. This repository is inspired from that [blog].
+
+Security is disabled in elasticsearch and kibana. For this scenario, `elasticsearch.yml` file is overwritten by the `configmap.yaml`. 
+Also in order to solve parser error in fluentd `FLUENT_CONTAINER_TAIL_PARSER_TYPE` is added to environment variable in the `fluentd/deamonset.yaml`.
 
 ## How to Setup?
-1 - Create namespace monitoring : `kubectl create ns logging`
+1 - Create namespace logging : `kubectl create ns logging`
 
 2 - In the project directory:
 ` kustomize build k8s | kubectl apply -f -
