@@ -1,0 +1,11 @@
+namespace: logging
+
+resources:
+  - elasticsearch/configmap.yaml
+  - elasticsearch/statefulset.yaml
+  - elasticsearch/service.yaml
+  - kibana/deployment.yaml
+  - kibana/service.yaml
+  - fluentd/daemonset.yaml
+  - fluentd/roles.yaml
+  - testpod/testpod.yaml
