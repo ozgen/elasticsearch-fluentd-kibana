@@ -15,7 +15,7 @@ Check & port-forwarding the kibana deployed correctly or not ?
 
 
 ## To see the results :
-when check all nodes works fine, then you can add index pattern in kibana as depicted on this  [blog].
+when check all pods works fine, then you can add index pattern in kibana as depicted on this  [blog].
 Then the results should be :
 
 In kibana client:
