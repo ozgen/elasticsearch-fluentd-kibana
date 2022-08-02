@@ -1,8 +1,7 @@
 # elasticsearch-fluentd-kibana
 ### EFK Stack on Kubernetes
 This repository is an example of how to configure elasticsearch, kibana and fluentd for logging in kubernetes. This repository is inspired from that [blog].  
-The implementation is declerative, so Helm is not used. (Only used for to generate prometheus-msteams yaml files like that `helm template prometheus-msteams/`
-).
+
 ## How to Setup?
 1 - Create namespace monitoring : `kubectl create ns logging`
 
