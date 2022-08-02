@@ -8,7 +8,9 @@ This repository is an example of how to configure elasticsearch, kibana and flue
 2 - In the project directory:
 ` kustomize build k8s | kubectl apply -f -
 `
+
 Check & port-forwarding the elasticsearch deployed correctly or not ?
+
 Check & port-forwarding the kibana deployed correctly or not ?
 
 
